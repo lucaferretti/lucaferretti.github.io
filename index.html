@@ -3,15 +3,28 @@
 <head>
     <title>Luca Ferretti's research page</title>
     <style>
-        .container {
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            background-color: rgba(0, 0, 139, 0.2); /* Very transparent dark blue background */
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
         .photo {
-            width: 450px;
-            height: auto;
-            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            border: 2px solid #000;
         }
         .content {
             max-width: 70%;
@@ -19,11 +32,22 @@
         ul {
             list-style-type: square;
         }
+        .logos img {
+            width: 50px;
+            height: auto;
+            margin-left: 10px;
+        }
     </style>
 </head>
 <body>
-    <h1>Luca Ferretti's research page:</h1>
-    <h1>Precision Infectious Disease Epidemiology group</h1>
+    <div class="header">
+        <h1>Luca Ferretti's research page:</h1>
+        <h1>Precision Infectious Disease Epidemiology group</h1>
+        <div class="logos">
+            <img src=“./PSILogo.jpg" alt=“PSI Logo">
+            <img src="./OxfordLogo.jpg" alt=“Oxford Logo">
+        </div>
+    </div>
     <div class="container">
         <div class="content">
             <p>Career Development Fellow of the Pandemic Sciences Institute.</p>
