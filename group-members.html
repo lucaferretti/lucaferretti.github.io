@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Group members</title>
-    <style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Group Members</title>
+  <style>
     body {
       font-family: Arial, sans-serif;
       font-size: 18px;
-      background-color: rgba(0, 33, 71, 0.1); /* Very transparent Oxford blue background */
+      background-color: rgba(0, 33, 71, 0.2); /* Very transparent Oxford blue background */
       margin: 0;
       padding: 20px;
     }
@@ -16,29 +18,78 @@
       background-color: #002147; /* Oxford blue */
       padding: 14px 20px;
     }
-        .navbar a {
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    </style>
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-size: 18px;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .group-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .group-container h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .group-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .member-photo {
+      width: 150px;
+      height: 150px;
+      border: 2px solid #000;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+    .member-info h3 {
+      margin: 0 0 10px 0;
+    }
+    .member-info p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="group-members.html">Group members</a>
-        <a href="publications.html">Publications</a>
-        <a href="contact.html">Contact</a>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="group-members.html">Group Members</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="group-container">
+    <h1>Group Members</h1>
+    
+    <!-- Group Member 1 -->
+    <div class="group-member">
+      <img src="path_to_member1_photo.jpg" alt="Member 1 Photo" class="member-photo">
+      <div class="member-info">
+        <h3>Member 1 Name</h3>
+        <p>Description for Member 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet justo ut sapien vehicula dignissim.</p>
+      </div>
     </div>
     
-    <h1>Group members</h1>
-    <p>Details about the group members go here...</p>
+    <!-- Group Member 2 -->
+    <div class="group-member">
+      <img src="path_to_member2_photo.jpg" alt="Member 2 Photo" class="member-photo">
+      <div class="member-info">
+        <h3>Member 2 Name</h3>
+        <p>Description for Member 2. Vivamus ornare tortor vitae magna facilisis, quis tempus elit consectetur. Donec pretium commodo felis.</p>
+      </div>
+    </div>
+    
+    <!-- Add more group members following the same structure as needed -->
+  </div>
 </body>
 </html>
