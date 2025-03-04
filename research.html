@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Research</title>
-    <style>
-            body {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Research</title>
+  <style>
+    body {
       font-family: Arial, sans-serif;
       font-size: 18px;
       background-color: rgba(0, 33, 71, 0.1); /* Very transparent Oxford blue background */
@@ -16,29 +18,88 @@
       background-color: #002147; /* Oxford blue */
       padding: 14px 20px;
     }
-        .navbar a {
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    </style>
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      font-size: 18px;
+    }
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .research-container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .research-container h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .research-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+    .research-photo {
+      width: 150px;
+      height: 150px;
+      border: 2px solid #000;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+    .research-info {
+      text-align: center;
+    }
+    .research-info h3 {
+      margin: 0 0 10px 0;
+    }
+    .research-info p {
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="group-members.html">Group members</a>
-        <a href="publications.html">Publications</a>
-        <a href="contact.html">Contact</a>
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="group-members.html">Group Members</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <div class="research-container">
+    <h1>Research</h1>
+    
+    <!-- Research Item 1 -->
+    <div class="research-item">
+      <img src="path_to_research_photo1.jpg" alt="Research Photo 1" class="research-photo">
+      <div class="research-info">
+        <h3>Research Project Title 1</h3>
+        <p>
+          Description for Research Project 1. Lorem ipsum dolor sit amet, consectetur 
+          adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.
+        </p>
+      </div>
     </div>
     
-    <h1>Research</h1>
-    <p>Details about the research go here...</p>
+    <!-- Research Item 2 -->
+    <div class="research-item">
+      <img src="path_to_research_photo2.jpg" alt="Research Photo 2" class="research-photo">
+      <div class="research-info">
+        <h3>Research Project Title 2</h3>
+        <p>
+          Description for Research Project 2. Sed ut perspiciatis unde omnis iste natus error sit 
+          voluptatem accusantium doloremque laudantium.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Add more research items as needed -->
+  </div>
 </body>
 </html>
